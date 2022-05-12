@@ -1,0 +1,324 @@
+@import url(./normalize.css);
+
+.slick-slider {
+	width: 96.5vw;
+	position: relative;
+	display: block;
+	box-sizing: border-box;
+	user-select: none;
+	touch-action: pan-y;
+	z-index: 10;
+}
+
+.slick-prev,
+.slick-next {
+	width: 20px;
+	height: 21px;
+	position: absolute;
+	border: 0;
+	top: 50%;
+	cursor: pointer;
+	transform: translateY(-50%);
+	background: transparent;
+	z-index: 10;
+	transition: 300ms ease all;
+	&:hover {
+		transform: translateZ(2px);
+	}
+}
+.slick-prev {
+	left: -40px;
+}
+.slick-next {
+	right: -40px;
+}
+
+.slick-list {
+	height: 90vh;
+	position: relative;
+	overflow: hidden;
+	display: block;
+	margin: 0;
+	padding: 0;
+	&:focus {
+		outline: none;
+	}
+	&.dragging {
+		cursor: pointer;
+		cursor: hand;
+	}
+}
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+	transform: translate3d(0, 0, 0);
+}
+
+.slick-track {
+	position: relative;
+	display: flex;
+	align-items: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+.slick-slide {
+	height: 88vh;
+	box-sizing: border-box;
+	position: relative;
+	&::before {
+		content: '';
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		background:rgba(0, 0, 0, 0.5);
+	}
+	img {
+		display: block;
+	}
+	&.slick-loading img {
+		display: none;
+	}
+	.slick-initialized & {
+		display: block;
+	}
+
+	.slick-loading & {
+		visibility: hidden;
+	}
+}
+.slick-arrow.slick-hidden {
+	display: none;
+}
+
+.slick-dotted.slick-slider {
+	position: absolute;
+	bottom: 4vh;
+	left: 45vw;
+}
+
+.slick-dots {
+	position: absolute;
+	bottom: 3vh;
+	display: block;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	text-align: center;
+}
+.slick-dots li {
+	position: relative;
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	margin: 0 5px;
+	padding: 0;
+	cursor: pointer;
+}
+.slick-dots li button {
+	font-size: 0;
+	line-height: 0;
+	display: block;
+	width: 15px;
+	height: 15px;
+	padding: 5px;
+	cursor: pointer;
+	color: transparent;
+	border: 0;
+	outline: none;
+	border-radius: 50%;
+	background-color: transparent;
+	box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.4) inset;
+}
+.slick-dots li button:hover,
+.slick-dots li button:focus {
+	outline: none;
+}
+.slick-dots li button:hover:before,
+.slick-dots li button:focus:before {
+	opacity: 1;
+}
+.slick-dots li button:before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 15px;
+	height: 15px;
+	content: "";
+	text-align: center;
+	opacity: 0;
+	border-radius: 50%;
+	background: #f7bd17;
+}
+.slick-dots li.slick-active button:before {
+	opacity: 1;
+}
+
+.partnersSlider {
+	width: 62vw;
+	.slick-slide {
+		height: 20%;
+		padding: 0 10px;
+		background: transparent;
+		box-sizing: border-box;
+		position: relative;
+		img {
+			display: block;
+		}
+		&.slick-loading img {
+			display: none;
+		}
+		.slick-initialized & {
+			display: block;
+		}
+
+		.slick-loading & {
+			visibility: hidden;
+		}
+	}
+	.slick-track {
+		left: 10px;
+	}
+}
+
+.websiteSlider {
+	width: 1000px;
+	&:hover {
+		.nextarr,
+		.prevarr {
+			opacity: 1;
+			cursor: pointer;
+		}
+	}
+	.slick-slide {
+		height: 100%;
+		box-sizing: border-box;
+		position: relative;
+		&::before {
+			display: none;
+		}
+	}
+	.slick-track {
+		left: 30px;
+	}
+	.slick-prev,
+	.slick-next {
+		width: 40px;
+		height: 40px;
+		position: absolute;
+		border: 0;
+		border-radius: 50%;
+		top: 55%;
+		cursor: pointer;
+		transform: translateX(-20%);
+		background: rgba(97, 97, 97, 0.3);
+		opacity: 0;
+		z-index: 10;
+		transition: 300ms ease all;
+	}
+	.slick-prev {
+		left: 40px;
+		&:hover {
+			left: 30px;
+			box-shadow: 0 7.5px 15px rgba(34, 34, 34, 0.2);
+		}
+	}
+	.slick-next {
+		right: 40px;
+		&:hover {
+			right: 30px;
+			box-shadow: 0 7.5px 15px rgba(34, 34, 34, 0.2);
+		}
+	}
+	.slick-dots li button {
+		box-shadow: 0 0 0 1px rgba(223, 223, 223, 0.6) inset;
+	}
+}
+
+.customerСounter {
+	font-family: "Raleway", sans-serif;
+	color: #f96c0d;
+	font-size: 3.5em;
+	line-height: 1.5;
+	margin: 0;
+	font-weight: 600;
+}
+
+.projectsСounter {
+	font-family: "Raleway", sans-serif;
+	color: #7e2323;
+	font-size: 3.5em;
+	line-height: 1.5;
+	margin: 0;
+	font-weight: 600;
+}
+
+.currentProjectsСounter {
+	font-family: "Raleway", sans-serif;
+	color: #7cddb5;
+	font-size: 3.5em;
+	line-height: 1.5;
+	margin: 0;
+	font-weight: 600;
+}
+
+@media screen and (min-width: 501px) and (max-width: 1840px) {
+	.partnersSlider {
+		width: 85vw;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.slick-slider {
+		width: 100vw;
+	}
+	.slick-list {
+		height: 40vh;
+	}
+	.slick-dots li {
+		width: 10px;
+		height: 10px;
+		margin: 0 5px;
+		padding: 0;
+		cursor: pointer;
+	}
+	.slick-dots li button {
+		width: 10px;
+		height: 10px;
+		padding: 3px;
+	}
+	.slick-dots li button:before {
+		width: 10px;
+		height: 10px;
+	}
+	.customerСounter {
+		font-size: 2.5em;
+	}
+	.projectsСounter {
+		font-size: 2.5em;
+	}
+	.currentProjectsСounter {
+		font-size: 2.5em;
+	}
+	.partnersSlider {
+		.slick-slide {
+			height: 120px;
+			padding: 0 10px;
+		}
+		.slick-track {
+			height: 60px;
+			left: 0;
+		}
+	}
+	.websiteSlider {
+		width: 90vw;
+		.slick-track {
+			left: 10px;
+		}
+		.slick-prev,
+		.slick-next {
+			visibility: hidden;
+		}
+	}
+}

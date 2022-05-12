@@ -1,0 +1,43 @@
+{
+  "name": "brain",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.9.0",
+    "@emotion/styled": "^11.8.1",
+    "@mui/icons-material": "^5.6.2",
+    "@mui/material": "^5.6.2",
+    "@mui/styled-engine-sc": "^5.6.1",
+    "@mui/styles": "^5.6.2",
+    "@types/axios": "^0.14.0",
+    "@types/react-slick": "^0.23.8",
+    "axios": "^0.24.0",
+    "classnames": "^2.3.1",
+    "final-form": "^4.20.6",
+    "framer-motion": "^5.5.5",
+    "next": "12.0.7",
+    "next-analytics": "^2.0.0",
+    "react": "17.0.2",
+    "react-countup": "^6.1.0",
+    "react-dom": "17.0.2",
+    "react-final-form": "^6.5.9",
+    "react-reveal": "^1.2.2",
+    "react-slick": "^0.28.1",
+    "react-visibility-sensor": "^5.1.1",
+    "react-yandex-metrika": "^2.6.0",
+    "sass": "^1.45.2",
+    "styled-components": "^5.3.5"
+  },
+  "devDependencies": {
+    "@types/node": "17.0.7",
+    "@types/react": "17.0.38",
+    "eslint": "8.6.0",
+    "eslint-config-next": "12.0.7",
+    "typescript": "4.5.4"
+  }
+}

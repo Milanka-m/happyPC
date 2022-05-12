@@ -1,0 +1,228 @@
+.mainPortfolio {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  padding: 30px 0 20px;
+}
+
+.mainPortfolio__container {
+  width: 64vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.mainPortfolio__title {
+  font-family: 'Raleway',sans-serif;
+  color:#f96c0d;
+  font-size: 3em;
+  line-height: 1;
+  margin: 0;
+  font-weight: 800;
+  letter-spacing: -.03em;
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+.mainPortfolio__nav {
+  align-self: stretch;
+  max-width: 700px;
+}
+
+.mainPortfolio__nav_position {
+  width: 40%;
+}
+
+.mainPortfolio__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.portfolioСase {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  padding: 60px 0;
+}
+
+.portfolioСase__container {
+  width: 64vw;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.portfolioСase__navLink {
+  align-self: flex-start;
+  font-family: 'Open Sans',sans-serif;
+  font-size: 1.06em;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #000;
+  transition: 300ms ease all;
+  span {
+    margin-right: 6px;
+  }
+  &:hover {
+    opacity: .6;
+  }
+}
+
+.portfolioСase__title {
+  align-self: flex-start;
+  padding: 20px 0 50px;
+  font-family: 'Raleway',sans-serif;
+  color: #f96c0d;
+  font-size: 2.6em;
+  line-height: 1;
+  margin: 0;
+  font-weight: 800;
+  letter-spacing: -.03em;
+}
+
+.portfolioСase__socialLinks {
+  position: absolute;
+  right: 0;
+  display: flex;
+  .portfolioСase__socialLink {
+    margin-left: 10px;
+    transition: 300ms ease all;
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+}
+
+.portfolioСase__table {
+  margin-top: 30px;
+  border-collapse: collapse;
+  width: 100%;
+  display: table;
+  box-sizing: border-box;
+  text-indent: initial;
+  tr:nth-of-type(1n + 2) {
+    border-bottom: 1px solid rgb(200, 200, 200);
+  }
+}
+
+.portfolioСase__tableGroupHead {
+  display: table-row;
+  vertical-align: inherit;
+  background-color: rgb(200, 200, 200);
+}
+
+.portfolioCase__tableTh {
+  padding: 20px 15px;
+  text-align: left;
+  vertical-align: bottom;
+  font-family: 'Raleway',sans-serif;
+  color: #000;
+  font-size: 1.2em;
+  line-height: 1;
+  margin: 0;
+  font-weight: 500;
+}
+
+.portfolioСase__tablePropertyName {
+  padding: 16px 12px;
+  text-align: left;
+  vertical-align: bottom;
+  font-size: .9rem;
+  font-weight: normal;
+  color: #999;
+  text-transform: uppercase;
+  vertical-align: top;
+  min-width: 220px;
+}
+
+.portfolioСase__tableSpecPrice {
+  font-size: 1.4rem;
+  color: #f96c0d;
+}
+
+.portfolioСase__tableUkIcon {
+  // width: 20px;
+  margin-right: 10px;
+}
+
+.portfolioСase__tableSpecItem {
+  font-family: 'Raleway',sans-serif;
+  color: #000;
+  font-size: 1rem;
+  line-height: 1;
+  margin: 0;
+  font-weight: 400;
+}
+
+@media screen and (min-width: 2900px) and (max-width: 3500px) {
+	.mainPortfolio__container,
+  .portfolioСase__container {
+		width: 45%;
+	}
+}
+
+@media screen  and (min-width: 801px) and (max-width: 1840px) {
+  .mainPortfolio__container {
+    width: 85%;
+  }
+
+  .portfolioСase__text  {
+    width: 88%;
+  }
+} 
+
+@media screen and (max-width: 800px) {
+  .mainPortfolio__container {
+    width: calc(100% - 30px);
+  }
+  .mainPortfolio__title {
+    font-size: 1.7em;
+    padding-bottom: 30px;
+  }
+  .mainPortfolio__nav {
+    width: 100%;
+  }
+  .portfolioСase {
+    width: 100%;
+    padding: 20px 0 40px;
+  }
+  
+  .portfolioСase__container {
+    width: 90%;
+  }
+  
+  .portfolioСase__navLink {
+    font-size: .9em;
+  }
+  
+  .portfolioСase__title {
+    font-size: 1.8em;
+    padding: 15px 0 30px;
+  }
+
+  .portfolioСase__socialLinks {
+    padding-right: 0;
+    a {
+      img {
+        width: 20px;
+        height: 20px;
+      }
+      &:hover {
+        opacity: 0.6;
+      }
+    }
+  }
+  .portfolioСase__tablePropertyName {
+    font-size: .7rem;
+    min-width: 200px;
+  }
+  .portfolioСase__tableSpecItem {
+    font-size: .8rem;
+  }
+  .portfolioСase__tableSpecPrice {
+    font-size: 1rem;
+  }
+} 

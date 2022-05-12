@@ -1,0 +1,100 @@
+.websiteDev {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: auto;
+}
+
+.websiteDev__container {
+	width: 83%;
+	padding: 50px 0 80px 14.5%;
+}
+
+.websiteDev__block {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.websiteDev__content {
+	max-width: 59%;
+	padding-right: 50px;
+}
+
+.websiteDev__title {
+	font-family: "Raleway", sans-serif;
+	color: #7e2323;
+	font-size: 3.125em;
+	line-height: 1;
+	margin: 0;
+	font-weight: 800;
+	letter-spacing: -0.03em;
+	padding-bottom: 40px;
+	span {
+		color: #f96c0d;
+	}
+}
+
+.websiteDev__paragraph {
+	font-family: "Open Sans", sans-serif;
+	font-weight: 400;
+	font-size: 1rem;
+	line-height: 1.5em;
+	margin: 0;
+	padding-top: 20px;
+}
+
+.websiteDev__item {
+	font-family: "Open Sans", sans-serif;
+	font-weight: 400;
+	font-size: 1rem;
+	line-height: 1.5em;
+	margin: 0;
+}
+
+@media screen and (min-width: 2900px) and (max-width: 3500px) {
+	.websiteDev__container {
+	  width: 45%;
+	  padding: 50px 0 80px 28%;
+	}
+  }
+
+@media screen and (min-width: 801px) and (max-width: 1840px) {
+	.websiteDev__container {
+		width: 92%;
+		padding: 50px 0 60px 4.5%;
+	}
+	.websiteDev__content {
+		max-width: 58%;
+		padding-right: 50px;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.websiteDev__container {
+		width: 90%;
+		padding: 30px 0 20px 15px;
+	}
+	.websiteDev__content {
+		max-width: 100%;
+		padding-right: 0;
+		padding-bottom: 20px;
+	}
+	.websiteDev__block {
+		flex-direction: column;
+	}
+	.websiteDev__title {
+		font-size: 1.7em;
+		padding-bottom: 0;
+		span {
+			font-size: 20px;
+		}
+	}
+	.websiteDev__paragraph {
+		font-size: 0.9rem;
+	}
+	.websiteDev__item {
+		font-size: 0.9rem;
+	}
+}

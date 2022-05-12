@@ -1,0 +1,48 @@
+.count {
+  display: flex;
+  padding-top: 20px;
+}
+.count__item {
+  padding-right: 40px;
+  max-width: 150px;
+  &:nth-of-type(1n + 2) {
+    border-left: 1px solid #eaeaea;
+    padding-left: 25px;
+  }
+}
+
+.count__number {
+  margin-bottom: 20px;
+}
+
+.count__text {
+  text-transform: uppercase;
+  margin: 0;
+  line-height: 1.5em;
+  font-family: 'Raleway',sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+@media screen and (max-width: 800px) {
+  .count {
+    flex-direction: column;
+    padding-top: 0;
+  }
+  .count__item {
+    padding-right: 0;
+    padding-left: 20px;
+    max-width: 100%;
+    &:nth-of-type(1n + 2) {
+      border-left: 0;
+      padding-left: 0;
+      padding-left: 20px;
+    }
+  }
+  .count__number {
+    margin-bottom: 0;
+  }
+  .count__text {
+    font-size: .8rem;
+  }
+} 

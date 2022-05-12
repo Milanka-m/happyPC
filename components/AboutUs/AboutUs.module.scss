@@ -1,0 +1,106 @@
+.aboutUs {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	margin: auto;
+	background-image: url(../../assets/images/backraund-about-us.webp);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: bottom center;
+	margin-bottom: 15px;
+}
+
+.aboutUs__container {
+	width: calc(100% - 540px);
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+.aboutUs__content {
+	max-width: 580px;
+	padding-right: 50px;
+	padding-bottom: 60px;
+}
+
+.aboutUs__title {
+	font-family: "Raleway", sans-serif;
+	color: #7e2323;
+	font-size: 3.125em;
+	line-height: 1;
+	margin: 0;
+	font-weight: 800;
+	letter-spacing: -0.03em;
+	padding-bottom: 50px;
+}
+
+.aboutUs__paragraph {
+	font-family: "Open Sans", sans-serif;
+	font-weight: 400;
+	line-height: 1.5;
+	margin: 0;
+	padding-bottom: 20px;
+}
+
+.aboutUs__cardLink {
+	margin-top: 100px;
+	padding: 20px 40px;
+	max-width: 180px;
+	display: flex;
+	justify-content: center;
+	box-sizing: border-box;
+	box-shadow: 0 20px 30px rgb(34 34 34 / 7%);
+	font-family: "Raleway", sans-serif;
+	font-size: 0.8rem;
+	line-height: 1;
+	font-weight: 800;
+	border-radius: 30px;
+	border-top-left-radius: 0;
+	color: #fff;
+	background: #f96c0d;
+	transition: 300ms ease all;
+	&:hover {
+		transform: translateY(-3px);
+		box-shadow: 0 7.5px 15px rgba(34, 34, 34, 0.2);
+	}
+}
+
+@media screen and (min-width: 2900px) and (max-width: 3500px) {
+	.aboutUs__container {
+		width: 45%;
+	}
+}
+
+@media screen and (min-width: 801px) and (max-width: 1840px) {
+	.aboutUs__container {
+		width: calc(100% - 150px);
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.aboutUs__img {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.aboutUs__container {
+		width: calc(100% - 30px);
+		flex-direction: column;
+	}
+	.aboutUs__content {
+		max-width: 100%;
+		padding-right: 0;
+		padding-bottom: 40px;
+	}
+	.aboutUs__title {
+		font-size: 1.7em;
+		padding-bottom: 20px;
+	}
+	.aboutUs__paragraph {
+		font-size: 0.9rem;
+	}
+	.aboutUs__cardLink {
+		margin-top: 170px;
+	}
+}

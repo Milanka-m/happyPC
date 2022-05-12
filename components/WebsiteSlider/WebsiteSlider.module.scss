@@ -1,0 +1,104 @@
+.nextarr__btn {
+  position: relative;
+  cursor: pointer;
+  width: 10px;
+  height: 10px;
+  .nextarr__btnLeft {
+    position: absolute;
+    top: 0;
+    left: 7px;
+    width: 16px;
+    height: 2px;
+    display: block;
+    transform: rotate(45deg);
+    float: right;
+    border-radius: 2px;
+  }
+  .nextarr__btnLeft:after {
+    content: "";
+    background: #fff;
+    width: 16px;
+    height: 2px;
+    display: block;
+    float: right;
+    border-radius: 2px;
+    z-index: -1;
+  }
+ .nextarr__btnRight {
+    position: absolute;
+    top: 11px;
+    left: 7px;
+    width: 16px;
+    height: 2px;
+    display: block;
+    transform: rotate(-45deg);
+    float: right;
+    border-radius: 2px;
+  }
+  .nextarr__btnRight:after {
+    content: "";
+    background: #fff;
+    width: 16px;
+    height: 2px;
+    display: block;
+    float: right;
+    border-radius: 5px;
+    z-index: -1;
+  }
+}
+
+.prevarr__btn {
+  position: relative;
+  cursor: pointer;
+  width: 10px;
+  height: 10px;
+  .prevarr__btnLeft {
+    position: absolute;
+    top: 0;
+    left: 4px;
+    width: 16px;
+    height: 2px;
+    display: block;
+    transform: rotate(-45deg);
+    float: right;
+    border-radius: 2px;
+  }
+  .prevarr__btnLeft:after {
+    content: "";
+    background: #fff;
+    width: 16px;
+    height: 2px;
+    display: block;
+    float: right;
+    border-radius: 2px;
+    z-index: -1;
+  }
+ .prevarr__btnRight {
+    position: absolute;
+    top: 11px;
+    left: 4px;
+    width: 16px;
+    height: 2px;
+    display: block;
+    transform: rotate(45deg);
+    float: right;
+    border-radius: 2px;
+  }
+  .prevarr__btnRight:after {
+    content: "";
+    background: #fff;
+    width: 16px;
+    height: 2px;
+    display: block;
+    float: right;
+    border-radius: 5px;
+    z-index: -1;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .nextarr__btn,
+  .prevarr__btn {
+    display: none;
+  }
+}

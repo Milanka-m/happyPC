@@ -1,0 +1,78 @@
+.price {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	margin: auto;
+}
+
+.price__container {
+	width: calc(100% - 540px);
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	margin-bottom: 10px;
+}
+
+.price__imageContainer {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.price__content {
+	width: 45%;
+	padding-left: 60px;
+	display: flex;
+	flex-direction: column;
+}
+
+.price__title {
+	font-family: "Raleway", sans-serif;
+	color: #7e2323;
+	font-size: 2.6rem;
+	line-height: 1;
+	margin: 0;
+	font-weight: 800;
+	padding: 0 0 10px 0;
+}
+
+@media screen and (min-width: 2900px) and (max-width: 3500px){
+	.price__container {
+		width: 45%;
+	}
+}
+
+@media screen and (min-width: 801px) and (max-width: 1840px) {
+	.price__container {
+		width: calc(100% - 150px);
+	}
+	.price__content {
+		width: 75vw;
+	}
+	.price__cardLink {
+		margin-top: 0;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.price__container {
+		width: calc(100% - 30px);
+		flex-direction: column-reverse;
+		align-items: center;
+		margin-bottom: 10px;
+	}
+
+	.price__content {
+		width: 100%;
+		margin-bottom: 20px;
+		padding-left: 20px;
+	}
+
+	.price__title {
+		font-size: 1.7rem;
+	}
+
+	.price__item {
+		font-size: .8rem;
+	}
+}

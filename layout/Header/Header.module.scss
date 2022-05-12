@@ -1,0 +1,218 @@
+.header {
+  width: 100%;
+  padding: 8px 0;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  background-color: #f96c0d;
+  box-shadow: 0 2px 30px 0 rgba(0,0,0,.15);
+}
+
+.header__mobileMenu {
+  display: none;
+}
+
+.header__container {
+  width: calc(100% - 540px);
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+}
+
+.header__navContainer {
+  display: flex;
+  align-items: center;
+}
+
+.header__nav {
+  width: 700px;
+  margin-left: 2.5vw;
+}
+
+.header__navLinks {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__langItem:hover {
+  .header__langSubMenu {
+    opacity: 1;
+    z-index: 50;
+  }
+}
+
+.header__navLink {
+  padding: 5px 20px;
+  position: relative;
+  font-family: 'Raleway', sans-serif;
+  margin: 0;
+  color: #fff;
+  font-size: .9rem;
+  line-height: 1.2;
+  font-weight: 500;
+  z-index: 4;
+  &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: 5;
+    left: 20px;
+    pointer-events: none;
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    background-color: transparent;
+    box-shadow: 0 0 0 2px #7e2323 inset;
+    bottom: 20%;
+    margin-bottom: -4px;
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  &::before {
+    content: '';
+    width: 100%;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    content: '';
+    display: block;
+    z-index: -1;
+    opacity: 0;
+    box-shadow: 0 4px 10px rgba(34,34,34,.2);
+    transform: scaleY(0);
+    transition: 250ms ease all;
+    transform-origin: 50% 100%;
+  }
+  &:hover {
+    color: #181818;
+    &::after {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    &::before {
+      opacity: 1;
+      transform: scaleY(1);
+    }
+  }
+}
+
+.header__navLink_active {
+  &::after {
+  background-color: #7e2323;
+  opacity: 1;
+  transform: translateY(2px);
+  }
+  
+}
+
+.header__langSpan {
+  margin-left: 6px;
+}
+
+.header__langItem {
+  position: relative;
+}
+
+.header__langSubMenu {
+  list-style: none;
+	padding: 0;
+	margin: 0;
+	position: absolute;
+	left: 0;
+  opacity: 0;
+	top: 23px;
+	width: 260px;
+	z-index: 5;
+	transition: 0.3s;
+  li {
+    display: block;
+    margin: 0;
+    font-size: 13px;
+    padding: 0;
+    a {
+      background-color: #fff;
+      color: #181818;
+      text-decoration: none;
+      padding: 10px 20px;
+      white-space: nowrap;
+      display: block;
+      transition: 0.3s;
+      transform: translateX(0);
+      position: relative;
+      &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        left: 4%;
+        pointer-events: none;
+        height: 8px;
+        width: 8px;
+        border-radius: 50%;
+        background-color: transparent;
+        box-shadow: 0 0 0 2px #7e2323 inset;
+        top: 38%;
+        transition: 200ms ease all;
+        opacity: 0;
+        transform: translateX(-8px);
+      }
+      &:hover {
+        transform: translateX(10px);
+        &::before {
+          opacity: 1;
+          transform: translatex(-2px);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 2900px) and (max-width: 3500px) {
+  .header__container {
+		width: 45%;
+	}
+}
+
+@media screen and (min-width: 1201px) and (max-width: 1860px) {
+  .header__container {
+    width: calc(100% - 150px);
+  }
+}
+
+@media screen and (min-width: 1201px) and (max-width: 1200px) {
+  .header__container {
+    width: calc(100% - 50px);
+  }
+} 
+
+@media screen and (min-width: 501px) and (max-width: 1200px) {
+  .header__mobileMenu {
+    padding: 15px 15px 15px 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+  }
+  .header__container {
+    display: none;
+  }
+} 
+
+@media screen and (max-width: 500px) {
+  .header__mobileMenu {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+  }
+  .header__container {
+    display: none;
+  }
+  .header__logoLink {
+    margin-right: 10px;
+  }
+}

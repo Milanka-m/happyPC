@@ -1,0 +1,46 @@
+.directions {
+  width: 80%;
+  padding-top: 50px;
+}
+
+.directions__title {
+  font-family: 'Raleway',sans-serif;
+  color: #7e2323;
+  font-size: 1.48em;
+  line-height: 1;
+  margin: 0;
+  font-weight: 800;
+  letter-spacing: -.03em;
+  padding-bottom: 20px;
+}
+
+#directions__lists {
+  margin-left: 20px;
+  list-style: decimal;
+}
+
+.directions__item {
+  font-family: 'Open Sans',sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5em;
+  margin: 0;
+  a {
+    color: #f96c0d;
+    font-weight: 600;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .directions {
+    width: 100%;
+  }
+  
+  .directions__title {
+    font-size: 1.2em;
+  }
+  
+  .directions__item {
+    font-size: .9rem;
+  }
+} 

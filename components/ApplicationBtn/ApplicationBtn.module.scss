@@ -1,0 +1,79 @@
+.applicationBtn__link {
+  padding: 20px 24px;
+  width: 200px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  box-shadow: 0 20px 30px rgb(34 34 34 / 7%);
+  font-family: 'Raleway',sans-serif;
+  font-size: .75rem;
+  line-height: 1;
+  font-weight: 800;
+  border-radius: 30px;
+  border-bottom-right-radius: 0;
+  color: #fff;
+  background: #7e2323;
+  text-transform: uppercase;
+  margin: 0;
+  transition: 300ms ease all;
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 7.5px 15px rgba(34,34,34,.2);
+    .applicationBtn__arrow {
+      transform: translateX(-6px);
+    }
+  }
+}
+
+.applicationBtn__arrow {
+  position: relative;
+  cursor: pointer;
+  margin-right: 10px;
+  width: 15px;
+  height: 8px;
+  transition: 300ms ease all;
+  .applicationBtn__arrowLeft {
+    position: absolute;
+    background-color: transparent;
+    top: 0;
+    left: 0;
+    width: 15px;
+    height: 7px;
+    display: block;
+    transform: rotate(90deg);
+    float: right;
+  }
+  .applicationBtn__arrowLeft:after {
+    content: "";
+    background: #fff;
+    width: 15px;
+    height: 7px;
+    display: block;
+    float: right;
+    background:linear-gradient(225deg, transparent 4px, #fff 0);
+    z-index: -1;
+  }
+  .applicationBtn__arrowRight {
+    position: absolute;
+    background-color: transparent;
+    top: 0;
+    left: 6px;
+    width: 15px;
+    height: 7px;
+    display: block;
+    transform: rotate(90deg);
+    float: right;
+    border-radius: 2px;
+  }
+  .applicationBtn__arrowRight:after {
+    content: "";
+    background: #fff;
+    width: 15px;
+    height: 7px;
+    display: block;
+    float: right;
+    background:linear-gradient(310deg, transparent 4px, #fff 0);
+    z-index: -1;
+  }
+}
