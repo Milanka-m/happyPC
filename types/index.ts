@@ -1,23 +1,3 @@
-export interface ICards {
-	id?: string
-	title?: string
-	images?: string[]
-	imgnavlink?: string[]
-	navlink?: string[]
-	category?: string[]
-	portfoliolink: string
-	categorytitle?: string[]
-	text?: string
-}
-export interface IBlogs {
-	id?: string
-	title?: string
-	desc?: string
-	image?: string
-	category?: string
-	portfoliolink: string
-}
-
 export interface IPortfolioCase {
 	id?: number
     attributes: {

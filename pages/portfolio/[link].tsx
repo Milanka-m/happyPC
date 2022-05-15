@@ -132,7 +132,7 @@ const KeysCurrent: NextPage<ICurrentProps> = ({ keyses, cards }) => {
 								<td>
 									<ul>
 										<li className={styles.portfolioСase__tableSpecItem}>
-											{keysesData && keysesData.attributes.cpu}
+											{keysesData && keysesData.attributes.motherboard}
 										</li>
 									</ul>
 								</td>
