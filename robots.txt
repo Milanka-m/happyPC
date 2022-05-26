@@ -1,0 +1,5 @@
+User-agent: *
+Crawl-delay: 5
+Disallow: /politika-konfidencialnosti
+Sitemap: https://happypc.pro/sitemap.xml
+Host: https://happypc.pro/

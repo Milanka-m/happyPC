@@ -1,0 +1,6 @@
+RewriteEngine on
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.html\ HTTP/
+RewriteRule ^index\.html$ https://happypc.pro [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^(www\.).happypc.pro\.ru$ [NC]
+RewriteRule ^(.*)$ https://happypc.pro/$1 [R=301,L] 
