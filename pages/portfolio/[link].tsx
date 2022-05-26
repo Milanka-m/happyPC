@@ -6,7 +6,6 @@ import { WebsiteSlider } from "../../components"
 import styles from "./index.module.scss"
 import { portfoliocasesApi } from "../../stores/api"
 import { IPortfolioCase } from "../../types"
-import { useRouter } from "next/router"
 
 interface ICurrentProps {
 	keyses: IPortfolioCase[]
